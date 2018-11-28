@@ -10,3 +10,4 @@
 .externalNativeBuild
 app/.gitignore
 app/.idea
+.idea/
