@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/coordinator_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_alignParentTop="true">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<android.support.design.widget.AppBarLayout
+			android:id="@+id/appBarMain"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<android.support.v7.widget.Toolbar
+				android:id="@+id/toolbar_2"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+				app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+				app:titleTextColor="@color/white" />
+		</android.support.design.widget.AppBarLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/appBarMain">
+
+			<LinearLayout
+				android:id="@+id/layoutFirst"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/inspection_text"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:padding="@dimen/margin_8"
+					android:text="Component Name"
+					android:textColor="@color/black"
+					android:textSize="@dimen/text_size16"
+					android:textStyle="bold" />
+
+				<TextView
+					android:id="@+id/inspection_info_text"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/margin_8"
+					android:layout_marginRight="@dimen/margin_8"
+					android:layout_weight="1"
+					android:padding="@dimen/margin_8"
+					android:text="Predicted lifetime"
+					android:textColor="@color/black"
+					android:textSize="@dimen/text_size14"
+					android:textStyle="bold" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/layoutSecond"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height_50"
+				android:layout_below="@id/layoutFirst"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/track_text"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_weight="1"
+					android:padding="@dimen/margin_8"
+					android:text="Track limit"
+					android:textColor="@color/black"
+					android:textSize="@dimen/text_size16" />
+
+				<TextView
+					android:id="@+id/time_limit"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="@dimen/margin_8"
+					android:layout_marginRight="@dimen/margin_8"
+					android:layout_weight="1"
+					android:padding="@dimen/margin_8"
+					android:text="100 hrs"
+					android:textColor="@color/black"
+					android:textSize="@dimen/text_size14" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/linearLayoutTripleShoeId"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height_50"
+				android:layout_below="@id/layoutSecond"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/element_to_change"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_weight="2"
+					android:padding="@dimen/margin_8"
+					android:text="Triple shoe"
+					android:textColor="@color/black"
+					android:textSize="@dimen/text_size16" />
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="@dimen/margin_8"
+					android:layout_weight="1"
+					android:padding="@dimen/margin_8"
+					android:text="10hrs"
+					android:textColor="@android:color/holo_red_light" />
+
+				<Button
+					android:id="@+id/triple_shoe_buy_button"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_margin="@dimen/margin_8"
+					android:layout_weight="1"
+					android:background="@color/colorPrimary"
+					android:text="Buy now"
+					android:textColor="@color/white"
+					android:textSize="@dimen/text_size14" />
+
+				<LinearLayout
+					android:id="@+id/tripleShoeBuyLayout"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginRight="@dimen/margin_8"
+					android:layout_weight="1"
+					android:orientation="horizontal"
+					android:visibility="gone">
+
+					<ImageView
+						android:id="@+id/removeTripleShoe"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:src="@drawable/ic_remove_black_24dp" />
+
+					<TextView
+						android:id="@+id/tripleShoeTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:text="1"
+						android:textAlignment="center"
+						android:textStyle="bold" />
+
+					<ImageView
+						android:id="@+id/addTripleShoe"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:src="@drawable/ic_add_black_24dp" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/bottomRollerLayout"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height_50"
+				android:layout_below="@id/linearLayoutTripleShoeId"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/bottom_roller_inspection"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_weight="2"
+					android:padding="@dimen/margin_8"
+					android:text="Bottom roller"
+					android:textColor="@color/black"
+					android:textSize="@dimen/text_size16" />
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="@dimen/margin_8"
+					android:layout_weight="1"
+					android:padding="@dimen/margin_8"
+					android:text="19hrs"
+					android:textColor="@android:color/holo_red_light" />
+
+				<Button
+					android:id="@+id/buy_button_bottom_roller"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_margin="@dimen/margin_8"
+					android:layout_weight="1"
+					android:background="@color/colorPrimary"
+					android:text="Buy now"
+					android:textColor="@color/white"
+					android:textSize="@dimen/text_size14" />
+
+				<LinearLayout
+					android:id="@+id/bottomRollerBuyLayout"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginRight="@dimen/margin_8"
+					android:layout_weight="1"
+					android:orientation="horizontal"
+					android:visibility="gone">
+
+					<ImageView
+						android:id="@+id/removeBottomRoller"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:src="@drawable/ic_remove_black_24dp" />
+
+					<TextView
+						android:id="@+id/bottomRollerTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:text="1"
+						android:textAlignment="center"
+						android:textStyle="bold" />
+
+					<ImageView
+						android:id="@+id/addBottomRoller"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:src="@drawable/ic_add_black_24dp" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/topRollerLayout"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height_50"
+				android:layout_below="@id/bottomRollerLayout"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/top_roller_text"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_weight="1"
+					android:padding="@dimen/margin_8"
+					android:text="Top Roller"
+					android:textColor="@color/black"
+					android:textSize="@dimen/text_size16" />
+
+				<TextView
+					android:id="@+id/time_limit_top_roller"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="@dimen/margin_8"
+					android:layout_marginRight="@dimen/margin_8"
+					android:layout_weight="1"
+					android:padding="@dimen/margin_8"
+					android:text="59 hrs"
+					android:textColor="@color/black"
+					android:textSize="@dimen/text_size14" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/idlerLayout"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height_50"
+				android:layout_below="@id/topRollerLayout"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/idler_text"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_weight="1"
+					android:padding="@dimen/margin_8"
+					android:text="Idler"
+					android:textColor="@color/black"
+					android:textSize="@dimen/text_size16" />
+
+				<TextView
+					android:id="@+id/time_limit_idler"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="@dimen/margin_8"
+					android:layout_marginRight="@dimen/margin_8"
+					android:layout_weight="1"
+					android:padding="@dimen/margin_8"
+					android:text="24 hrs"
+					android:textColor="@android:color/holo_orange_dark"
+					android:textSize="@dimen/text_size14" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/sprocketLayout"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height_50"
+				android:layout_below="@id/idlerLayout"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/sprocket_text"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_weight="2"
+					android:padding="@dimen/margin_8"
+					android:text="Sprocket"
+					android:textColor="@color/black"
+					android:textSize="@dimen/text_size16" />
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="@dimen/margin_8"
+					android:layout_weight="1"
+					android:padding="@dimen/margin_8"
+					android:text="19hrs"
+					android:textColor="@android:color/holo_red_light" />
+
+				<Button
+					android:id="@+id/buy_button_sprocket"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_margin="@dimen/margin_8"
+					android:layout_weight="1"
+					android:background="@color/colorPrimary"
+					android:text="Buy now"
+					android:textColor="@color/white"
+					android:textSize="@dimen/text_size14" />
+
+				<LinearLayout
+					android:id="@+id/sprocketBuyLayout"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginRight="@dimen/margin_8"
+					android:layout_weight="1"
+					android:orientation="horizontal"
+					android:visibility="gone">
+
+					<ImageView
+						android:id="@+id/removeSprocket"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:src="@drawable/ic_remove_black_24dp" />
+
+					<TextView
+						android:id="@+id/sprocketTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:text="1"
+						android:textAlignment="center"
+						android:textStyle="bold" />
+
+					<ImageView
+						android:id="@+id/addSprocket"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:src="@drawable/ic_add_black_24dp" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/dealer_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Nearby Dealer"
+				android:layout_above="@+id/button_layout"
+				android:layout_margin="@dimen/margin_8"
+				android:textSize="@dimen/text_size18"
+				android:textColor="@color/colorPrimary"
+				/>
+
+			<LinearLayout
+				android:id="@+id/button_layout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentStart="true"
+				android:layout_alignParentEnd="true"
+				android:layout_alignParentBottom="true"
+				android:layout_marginEnd="0dp"
+				android:layout_marginBottom="0dp"
+				android:orientation="horizontal">
+
+				<Button
+					android:id="@+id/new_inspection"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_margin="@dimen/margin_8"
+					android:layout_weight="1"
+					android:background="@drawable/button_border"
+					android:text="Buy All"
+					android:textAllCaps="false"
+					android:textColor="@color/colorPrimary" />
+
+				<Button
+					android:id="@+id/call_support"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_margin="@dimen/margin_8"
+					android:layout_weight="1"
+					android:background="@drawable/button_border"
+					android:text="Call for Support"
+					android:textAllCaps="false"
+					android:textColor="@color/colorPrimary" />
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

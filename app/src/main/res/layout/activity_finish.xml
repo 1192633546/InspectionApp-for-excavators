@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_finish"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:titleTextColor="@color/white">
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appBarMain">
+
+            <TextView
+                android:id="@+id/inspection_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:padding="@dimen/margin_8"
+                android:text="Inspection Summary"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size16" />
+
+
+            <TextView
+                android:id="@+id/inspection_info_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inspection_text"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:padding="@dimen/margin_8"
+                android:text="@string/inspection_info"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size16" />
+
+			<ImageView
+				android:id="@+id/excel"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:layout_below="@+id/inspection_info_text"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="@dimen/margin_32"
+				android:background="@drawable/pdf" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size12"
+                android:text="Inspection_EC220E_25_11_2018.pdf"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_below="@+id/excel"/>
+            <Button
+                android:id="@+id/new_inspection"
+                android:text=" New Inspection "
+                android:layout_margin="@dimen/margin_16"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/height_10"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

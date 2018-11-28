@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragments.InfoSheetFragment">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_8"
+        android:backgroundTint="@android:color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:textColor="@color/black"
+            android:text="Add basic inspection fields."
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:padding="@dimen/margin_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Site/Country:"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/countryText"
+                    android:layout_weight="2"
+                    android:backgroundTint="@android:color/black"
+                    android:hint="Country" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Serial Nº:"
+                    android:textColor="@android:color/black"
+                     />
+
+                <EditText
+                    android:id="@+id/serialNumberText"
+                    android:layout_weight="2"
+                    android:backgroundTint="@android:color/black"
+                    android:hint="Serial nº" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Gr. Condition:"
+                    android:textColor="@android:color/black"
+                     />
+
+                <EditText
+                    android:id="@+id/grConditionText"
+                    android:layout_weight="2"
+                    android:backgroundTint="@android:color/black"
+                    android:hint="Gr.Condition" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Operation hrs:"
+                    android:textColor="@android:color/black"
+                     />
+
+                <EditText
+                    android:id="@+id/operationHrsText"
+                    android:layout_weight="2"
+                    android:backgroundTint="@android:color/black"
+                    android:hint="Operation hrs" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Shoe width:"
+                    android:textColor="@android:color/black"
+                     />
+
+                <EditText
+                    android:id="@+id/shoeWidthText"
+                    android:layout_weight="2"
+                    android:backgroundTint="@android:color/black"
+                    android:hint="Shoe width" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Impact:"
+                    android:textColor="@android:color/black"
+                     />
+
+                <RadioGroup
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/lowImpactRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Low"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/modImpactRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mod"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/highImpactRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="High"
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Abrasive:"
+                    android:textColor="@android:color/black"
+                     />
+
+                <RadioGroup
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/lowAbrasiveRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Low"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/modAbrasiveRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mod"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/highAbrasiveRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="High"
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Moisture:"
+                    android:textColor="@android:color/black"
+                     />
+
+                <RadioGroup
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/lowMoistureRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Low"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/modMoistureRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mod"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/highMoistureRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="High"
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Packing:"
+                    android:textColor="@android:color/black"
+                     />
+
+                <RadioGroup
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/lowPackingRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Low"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/modPackingRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mod"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/highPackingRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="High"
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Shoe type:"
+                    android:textColor="@android:color/black"
+                     />
+
+                <RadioGroup
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/tripleShoeRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Triple (HD)"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/doubleShoeRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Double"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/singleShoeRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Single"
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Track tension:"
+                    android:textColor="@android:color/black"
+                     />
+
+                <RadioGroup
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/tripleTrackTension"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Triple (HD)"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/doubleTrackTension"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Double"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/singleTrackTension"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Single"
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

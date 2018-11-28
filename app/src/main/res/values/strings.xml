@@ -1,0 +1,42 @@
+<resources>
+	<string name="app_name">Excavator Inspection</string>
+	<string name="select_username_hint">Pick a username</string>
+	<string name="enter_email_hint">Enter your email address</string>
+	<string name="password_hint">Enter password</string>
+	<string name="register">Login / Register</string>
+	<string name="login">Login</string>
+	<string name="username_hint">* Username can be anything alphanumeric.</string>
+	<string name="thank_you_text">Thank you for installing JourneyMate application.</string>
+	<string name="car_type_hint">Enter the type of car that you like</string>
+	<string name="insurance_plan">Enter the insurance plan detail here</string>
+	<string name="car_subscription_type">Enter the subscription type here</string>
+	<string name="select_car_type_text"> 1) Select a type of car that you like?</string>
+	<string name="select_car_door_text"> 2) Number of doors in the car?</string>
+	<string name="car_subscription_date"> 3) Select subscription start/end date</string>
+	<string name="car_location_text"> 4) Select location of car</string>
+	<string name="select_location">select location</string>
+	<string name="subscription_start_date">start date</string>
+	<string name="subscription_end_date">end date</string>
+	<string name="car_name">Porche 911</string>
+	<string name="point_of_interest">Points of interest</string>
+	<string name="inspection_report_title">Inspection Report</string>
+
+	<string name="in_vehicle">In a vehicle</string>
+	<string name="on_bicycle">On a bicycle</string>
+	<string name="on_foot">On foot</string>
+	<string name="running">Running</string>
+	<string name="still">Still</string>
+	<string name="tilting">Tilting</string>
+	<string name="unknown">Unknown activity</string>
+	<string name="walking">Walking</string>
+	<string name="unidentifiable_activity">Unidentifiable activity: %1$d</string>
+
+	<string name="logout">Logout</string>
+	<string name="stop">Stop</string>
+	<string name="help">Help</string>
+	<string name="title_activity_inspection">InspectionActivity</string>
+
+	<string name="inspection_info">Your inspection has been saved to your local phone as well on the cloud, you will receive the
+		components information from server in some time.
+	</string>
+</resources>

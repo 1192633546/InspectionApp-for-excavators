@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/model_text"
+			android:textColor="@color/white"
+			android:textSize="@dimen/text_size20"
+			android:textStyle="bold"
+			android:layout_marginLeft="@dimen/margin_16"
+			android:layout_marginRight="@dimen/margin_16"
+			android:textAlignment="center"
+			android:padding="8dp"
+			android:text="Select an excavator for inspection"
+			android:layout_width="wrap_content"
+			android:layout_marginTop="@dimen/margin_100"
+			android:layout_height="wrap_content"
+			/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/model_recycler"
+			android:layout_margin="@dimen/margin_16"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/create_model_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+		android:background="@drawable/button_border_white"
+		android:textColor="@color/white"
+        android:layout_margin="@dimen/margin_16"
+        android:textSize="@dimen/margin_16"
+        android:text="Add new Model"
+        android:textAllCaps="false"
+        />
+</FrameLayout>
